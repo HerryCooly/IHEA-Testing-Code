@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "436608130655",
+    "project_id": "iha-expense-app",
+    "storage_bucket": "iha-expense-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436608130655:android:875320e621dbfb756645ea",
+        "android_client_info": {
+          "package_name": "com.okanagancollege.frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVu12WRh9535Q6t3WIkV60pQ0SoiQoD5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
