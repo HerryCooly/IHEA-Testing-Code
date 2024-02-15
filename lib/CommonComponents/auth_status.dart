@@ -20,19 +20,19 @@ class AuthStatus {
   }
 
   // Gets the users current role. For use with future builders.
-  static Future<String> getRole() async{
+  static Future<String> getRole() async {
     User? user = FirebaseAuth.instance.currentUser;
     return await FirebaseFirestore.instance
         .collection("user_roles")
         .doc(user!.uid)
         .get()
         .then((value) {
-          return value.data()!["role"];
-    }).onError((error, stackTrace) => _signOut());
+      return value.data()!["role"];
+    }).onError((error, stackTrace) => signOut());
   }
 
   // A method that signs the user out.
-  static Future<void> _signOut() async {
+  static Future<void> signOut() async {
     await FirebaseAuth.instance.signOut();
   }
 }

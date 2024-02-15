@@ -1,10 +1,8 @@
-import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
-import 'auth_gate.dart';
 import 'CommonComponents/common_drawer.dart';
 import 'PageContents/home_content.dart';
 import 'package:frontend/CommonComponents/auth_status.dart';
-import 'PageContents/jsonForm.dart';
+import 'package:frontend/CommonComponents/pop_out_button.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,9 +14,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<HomePage> {
+
   @override
   Widget build(BuildContext context) {
-
     AuthStatus.initAuthCheck(context);
 
     return FutureBuilder(
@@ -32,32 +30,7 @@ class _MyHomePageState extends State<HomePage> {
           return Scaffold(
             appBar: AppBar(
               backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-              actions: [
-                IconButton(
-                  icon: const Icon(Icons.person),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute<ProfileScreen>(
-                        builder: (context) => ProfileScreen(
-                          appBar: AppBar(
-                            title: const Text('User Profile'),
-                          ),
-                          actions: [
-                            SignedOutAction((context) {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const AuthGate()),
-                              );
-                            })
-                          ],
-                        ),
-                      ),
-                    );
-                  },
-                )
-              ],
+              actions: [PopOutButton()],
               title: Text(widget.title),
             ),
             // Grab drawer such that same on every page
@@ -67,7 +40,7 @@ class _MyHomePageState extends State<HomePage> {
             // Insert a FAB (Currently just does DEBUG msg, but will make new form later)
             floatingActionButton: FloatingActionButton(
               onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar( SnackBar(
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                   content: Text("User is a: $role"),
                   duration: Durations.medium4,
                 ));

@@ -7,7 +7,7 @@ open the whole directory as a vscode project.
 Note: I suggest installing the flutter sdk under `C:\`, such that your SDK path is `C:\flutter\bin`
 1. Get and install the SDK from [here](https://docs.flutter.dev/get-started/install/windows/desktop?tab=download)
 2. Add the path variable for `C:\flutter\bin` in environment variables under `PATH` as per flutter docs.
-3. Install the plugin for [VSCODE](https://docs.flutter.dev/get-started/editor?tab=vscode) and [Android Studio](https://docs.flutter.dev/get-started/editor?tab=androidstudio)
+3. Install the plugin for [VSCODE](https://docs.flutter.dev/get-started/editor?tab=vscode) or [Android Studio](https://docs.flutter.dev/get-started/editor?tab=androidstudio)
 4. In your IDE or terminal, run `flutter doctor` and correct all issues besides the visual studio warning.
 5. If you see the ending comments on components, ie `/drawer` and `/scaffold`, you have succesfully installed flutter.
 6. If doctor reports issues, you may need to run `flutter upgrade` and update your IDE or plugins.

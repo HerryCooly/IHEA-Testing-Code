@@ -4,9 +4,6 @@ import 'CommonComponents/app_theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
-
-
-// Demo app, TODO replace later
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -22,10 +19,10 @@ class IHEEApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'IHA Expenses App',
+      debugShowCheckedModeBanner: false,
       theme: AppTheme.getAppTheme(),
       // Hopefully this being static doesnt bite us later
       home: const AuthGate(),
     );
   }
 }
-

@@ -1,0 +1,11 @@
+{
+  "title": "TEST FORM (000003)",
+  "description": "Testing for file attachments",
+  "fields": [
+    {
+      "key": "imagePicker",
+      "type": "ImagePicker",
+      "label": "Upload Attachments"
+    }
+  ]
+}

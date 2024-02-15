@@ -1,0 +1,217 @@
+{
+  "title": "TEER (807000) v0.1",
+  "description": "Travel/Education Expense Reimbursement Request",
+  "fields": [
+    {
+      "key": "employeeHeader",
+      "type": "Header",
+      "label": "Reimbursement Info"
+    },
+    {
+      "key": "employeeNameField",
+      "type": "Input",
+      "label": "Name",
+      "placeholder": "Enter your name",
+      "required": true
+    },
+    {
+      "key": "empIDField",
+      "type": "Input",
+      "label": "EmployeeID",
+      "placeholder": "Enter your Employee#",
+      "required": true
+    },
+    {
+      "key": "payableVendorField",
+      "type": "Input",
+      "label": "Payable to Vendor",
+      "placeholder": "Vendor name"
+    },
+    {
+      "key": "coveragePeriodField",
+      "type": "Date",
+      "label": "Coverage Period",
+      "required": true
+    },
+    {
+      "key": "reasonForTravelField",
+      "type": "Input",
+      "label": "Request Reason",
+      "placeholder": "Travel to/Reason for Travel/Course Name",
+      "required": true
+    },
+    {
+      "key": "advanceRequiredField",
+      "type": "AdvancedCheckbox",
+      "label": "Advances",
+      "items": [
+        {
+          "label": "Advance Required",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "courseExpenseHeader",
+      "type": "Header",
+      "label": "Course Expenses"
+    },
+    {
+      "key": "registrationExpenseField",
+      "type": "AdvancedCheckbox",
+      "label": "Registration/Tuition Fees",
+      "items": [
+        {
+          "label": "Accounts Payable to pay vendor directly",
+          "value": false
+        },
+        {
+          "label": "Reimburse Employee",
+          "value": false
+        },
+        {
+          "label": "Foundation/Auxiliary Funded",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "travelExpenseHeader",
+      "type": "Header",
+      "label": "Travel Expenses"
+    },
+    {
+      "key": "airTravelExpense",
+      "type": "AdvancedCheckbox",
+      "label": "Air Travel",
+      "items": [
+        {
+          "label": "IHA Area",
+          "value": false
+        },
+        {
+          "label": "Inside BC",
+          "value": false
+        },
+        {
+          "label": "Outside BC",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "carRentalExpense",
+      "type": "AdvancedCheckbox",
+      "label": "Car Rental",
+      "items": [
+        {
+          "label": "IHA Area",
+          "value": false
+        },
+        {
+          "label": "Inside BC",
+          "value": false
+        },
+        {
+          "label": "Outside BC",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "hotelExpense",
+      "type": "AdvancedCheckbox",
+      "label": "Hotel",
+      "items": [
+        {
+          "label": "IHA Area",
+          "value": false
+        },
+        {
+          "label": "Inside BC",
+          "value": false
+        },
+        {
+          "label": "Outside BC",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "mealExpense",
+      "type": "AdvancedCheckbox",
+      "label": "Meals (Attach Receipts)",
+      "items": [
+        {
+          "label": "IHA Area",
+          "value": false
+        },
+        {
+          "label": "Inside BC",
+          "value": false
+        },
+        {
+          "label": "Outside BC",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "otherExpense",
+      "type": "AdvancedCheckbox",
+      "label": "Other (Parking, Public Transit, etc)",
+      "items": [
+        {
+          "label": "IHA Area",
+          "value": false
+        },
+        {
+          "label": "Inside BC",
+          "value": false
+        },
+        {
+          "label": "Outside BC",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "insuranceDiffExpense",
+      "type": "AdvancedCheckbox",
+      "label": "Insurance Differential (Attach Forms & ICBC Docs)",
+      "items": [
+        {
+          "label": "IHA Area",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "membershipExpenseField",
+      "type": "AdvancedCheckbox",
+      "label": "Membership Fees/Dues",
+      "items": [
+        {
+          "label": "IHA Area",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "commentsField",
+      "type": "TextArea",
+      "label": "Comments",
+      "placeholder": "If expenses include costs for other employees, list their names and expenses here."
+    },
+    {
+      "key": "imagePicker",
+      "type": "ImagePicker",
+      "label": "Upload Attachments"
+    },
+    {
+      "key": "signatureField",
+      "type": "Signature",
+      "label": "Signature"
+    }
+  ]
+}

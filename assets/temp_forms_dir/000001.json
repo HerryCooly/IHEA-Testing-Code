@@ -1,0 +1,164 @@
+{
+  "title": "TEST FORM (000001)",
+  "description": "Testing for signature block",
+  "fields": [
+    {
+      "key": "signatureField",
+      "type": "Signature",
+      "label": "Signature",
+      "value": [
+        {
+          "offset": [
+            325.7333272298177,
+            9.999969482421875
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            325.7333272298177,
+            9.999969482421875
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            256.93333943684894,
+            71.5999755859375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            256.93333943684894,
+            71.5999755859375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            396.93336995442706,
+            71.5999755859375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            396.93336995442706,
+            71.5999755859375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            324.93333943684894,
+            138.79998779296875
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            324.93333943684894,
+            138.79998779296875
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            322.53334554036456,
+            78
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            322.53334554036456,
+            78
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            660.933369954427,
+            4.399993896484375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            660.933369954427,
+            4.399993896484375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            660.133321126302,
+            143.5999755859375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            660.133321126302,
+            143.5999755859375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            2.533330281575502,
+            5.200042724609375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            2.533330281575502,
+            5.200042724609375
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            2.533330281575502,
+            142
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        },
+        {
+          "offset": [
+            2.533330281575502,
+            142
+          ],
+          "pressure": 1,
+          "type": "PointType.tap"
+        }
+      ],
+      "width": 668,
+      "height": 149
+    },
+    {
+      "key": "signatureField2",
+      "type": "Signature",
+      "label": "Signature"
+    }
+  ]
+}

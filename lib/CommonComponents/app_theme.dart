@@ -17,44 +17,45 @@ const _colorTextWhite = Colors.white;
 class AppTheme {
   static ThemeData getAppTheme() {
     return ThemeData(
-        useMaterial3: true,
-        // Define the default brightness and colors.
-        colorScheme: ColorScheme.fromSeed(
-          // IH blue is roughly I am guessing:
-          seedColor: _colorIHABlue,
-          brightness: Brightness.dark,
+      useMaterial3: true,
+      // Define the default brightness and colors.
+      colorScheme: ColorScheme.fromSeed(
+        // IH blue is roughly I am guessing:
+        seedColor: _colorIHABlue,
+        brightness: Brightness.dark,
+      ),
+      textTheme: TextTheme(
+        displayLarge: const TextStyle(
+          fontSize: 72,
+          fontWeight: FontWeight.bold,
         ),
-
-        textTheme: TextTheme(
-          displayLarge: const TextStyle(
-            fontSize: 72,
-            fontWeight: FontWeight.bold,
-          ),
-          titleLarge: GoogleFonts.roboto(
-            fontSize: 30,
-            fontStyle: FontStyle.normal,
-          ),
-          bodyMedium: GoogleFonts.roboto(),
-          displaySmall: GoogleFonts.robotoCondensed(),
+        titleLarge: GoogleFonts.roboto(
+          fontSize: 30,
+          fontStyle: FontStyle.normal,
         ),
+        bodyMedium: GoogleFonts.roboto(),
+        displaySmall: GoogleFonts.robotoCondensed(),
+      ),
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
+        iconSize: 24,
+        elevation: 6,
+        hoverElevation: 8,
+        focusElevation: 8,
+        highlightElevation: 8,
+        backgroundColor: _colorIHABlue2,
+        hoverColor: _colorIHABlue,
+        focusColor: _colorIHABlue,
+        foregroundColor: _colorTextWhite,
+      ),
 
-        floatingActionButtonTheme: const FloatingActionButtonThemeData(
-          iconSize: 24,
-          elevation: 6,
-          hoverElevation: 8,
-          focusElevation: 8,
-          highlightElevation: 8,
-          backgroundColor: _colorIHABlue2,
-          hoverColor: _colorIHABlue,
-          focusColor: _colorIHABlue,
-          foregroundColor: _colorTextWhite,
+      cardTheme: const CardTheme(elevation: 1),
+
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: TextButton.styleFrom(
+          foregroundColor: _colorIHABlue, // This is a custom color variable
         ),
+      ),
 
-        cardTheme: const CardTheme(
-            color: _colorIHABlue2,
-            elevation: 1
-        )
     );
   }
 }
-

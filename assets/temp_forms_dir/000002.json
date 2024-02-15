@@ -1,0 +1,18 @@
+{
+  "title": "TEST FORM (000002)",
+  "description": "Testing for no signature block",
+  "fields": [
+    {
+      "key": "testHeader",
+      "type": "Header",
+      "label": "Success!"
+    },
+    {
+      "key": "textField",
+      "type": "Input",
+      "label": "Form?",
+      "placeholder": "Enter some text",
+      "required": true
+    }
+  ]
+}

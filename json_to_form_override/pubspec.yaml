@@ -1,0 +1,26 @@
+name: json_to_form
+description: The plugin for Flutter converts the JSON format into a custom form.
+version: 0.0.5
+homepage: https://github.com/VictorRancesCode/json_to_form
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  signature:
+    path: ../signature_override
+  photo_view: ^0.14.0
+  file_picker: ^6.1.1
+  path_provider: ^2.1.2
+  pdf_render: ^1.4.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.17.0"
